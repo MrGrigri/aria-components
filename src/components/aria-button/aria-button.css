@@ -1,0 +1,14 @@
+:host {
+  --_background-color: #fafafa;
+  --_border-color: #aaaaaa;
+  --_border-radius: 4px;
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  background-color: var(--_background-color, --aria-button-background-color);
+  border: 1px solid var(--_border-color, --aria-button-border-color);
+  border-radius: var(--_border-radius, --aria-button-border-radius);
+  cursor: pointer;
+}

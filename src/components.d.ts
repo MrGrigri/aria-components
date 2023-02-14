@@ -7,6 +7,7 @@
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 export namespace Components {
     interface AriaButton {
+        "isToggle": boolean;
     }
 }
 declare global {
@@ -22,6 +23,7 @@ declare global {
 }
 declare namespace LocalJSX {
     interface AriaButton {
+        "isToggle"?: boolean;
     }
     interface IntrinsicElements {
         "aria-button": AriaButton;
